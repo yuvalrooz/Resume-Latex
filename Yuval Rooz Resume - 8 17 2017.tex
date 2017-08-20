@@ -1,0 +1,123 @@
+\documentclass[12pt]{article}
+\usepackage{fullpage}
+\usepackage[top=2cm, bottom=1cm, left=1.5cm, right=1.5cm]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\textheight=10in
+\pagestyle{empty}
+%\raggedbottom
+\raggedright
+
+%  \renewcommand{\encodingdefault}{cg}
+  %\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.4ex width .7ex depth -.1ex }
+% DEFINITIONS FOR RESUME
+\newcommand{\area}[2]{\vspace*{-14pt} \begin{verse}\textbf{#1}   #2 \end{verse}  }
+\newcommand{\lineunder}{\vspace*{-9pt} \\ \hspace*{-18pt} \hrulefill \\}
+\newcommand{\header}[1]{{\hspace*{-15pt}\vspace*{6pt} \textsc{#1}} \vspace*{-9pt} \lineunder}
+\newcommand{\employer}[2]{{ #1 (#2) }}
+\newcommand{\contact}[3]{
+\vspace*{-11pt}
+\begin{center}
+{\LARGE \scshape {#1}}\\
+#2 \lineunder
+#3
+\end{center}
+\vspace*{-4pt}
+}
+\newenvironment{achievements}{\begin{list}{$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}\end{list}}
+\newcommand{\schoolwithcourses}[4]{
+ \textbf{#1} #2 $\bullet$ #3\\
+#4 \\
+\vspace*{5pt}
+}
+\newcommand{\school}[4]{
+ \textbf{#1} #2 $\bullet$ #3\\
+#4 \\
+}
+% END RESUME DEFINITIONS
+
+\begin{document}
+
+\small
+\smallskip
+\vspace*{-44pt}
+
+\contact{\LARGE{Yuval Rooz}}
+{251 10th St NW, Apt C102, Atlanta, GA 30318}
+{(404) 514-1726 $\bullet$ yuval.rooz@gatech.edu}
+
+\header{Education}
+
+\schoolwithcourses{Georgia Institute of Technology}{Atlanta, GA, U.S.A.}{B.Sc in Electrical Engineering, 2008}
+{\textbf{Cumulative GPA: 3.8/4.00  Major GPA: 3.95/4.00 - Was not required to take the SAT exam}}
+    \begin{achievements}
+	   \item \textbf{Certificate in Finance}
+	   \item Emphasis on control theory
+    \end{achievements}
+
+\employer{\textbf{Georgia Institute of Technology}, Undergraduate TA Coordinator}{2005-Present}
+	\begin{achievements}
+	\item \textbf{Managing up to 100 teaching assistants and developing course schedule}
+	\item \textbf{Solved the hour billing problem by developing a database}
+	\item In charge of the hiring process of new teaching assistants (TAs)
+	\item Monitoring the payment process of TA's salary (up to \$700/Month)
+	\item Conducting classes of up to 300 students
+	\end{achievements}
+
+\employer{\textbf{DeviceTools},     Sales and Support Engineer}{2006-2007}
+	\begin{achievements}
+	\item \textbf{Negotiated deals of up to \$2 million}
+	\item \textbf{Responsible for sales and technical support in North America}
+	\item DeviceTools gives companies services in the field of embedded systems
+	\item DeviceTools is situated in Israel and is represented in Atlanta
+	\item Conducted market research for clients
+	\end{achievements}
+
+\employer{\textbf{Aerodan Systems Ltd.}, Technician}{2002-2004}
+	\begin{achievements}
+	\item \textbf{Developed and implemented hour system using MySQL}
+	\item Installed and fixed computers (hardware)
+	\item Purchased new hardware and software
+	\end{achievements}
+
+\employer{\textbf{Israeli Defense Forces}, First Sergeant - Tank Commander}{Army Service 1999-2002}
+	\begin{achievements}
+    \item \textbf{Led soldiers out of life threatening situations}
+	\item \textbf{Worked under extreme combat pressure}
+    \item Had to come up with creative solutions to technical problems
+	\item Commanded up to 12 soldiers
+	\item In charge of logistics for a platoon
+	\end{achievements}
+
+\header{Honors and Awards}
+\begin{achievements}
+\item  \textbf{Summa Cum Laude - Georgia Institute of Technology}
+\item  \textbf{Recognition award for volunteering in a refugee camp by Israel's Ministry of Education}
+\item  President List and Dean's List
+\end{achievements}
+
+\header{Research \& Work}
+\begin{achievements}
+\item  Autonomic Landmine Detection - DSP Group Georgia Institute of Technology
+\item  Proofread and edit circuit's book by Dr. John Dorsey
+\end{achievements}
+
+\header{Community Service}
+\begin{achievements}
+\item  \textbf{Organized a post war relief effort (Israel-Lebanon War 2007)}
+\item  \textbf{Volunteered in a refugee camp on the Southern Israeli border}
+\end{achievements}
+
+\header{Skills}
+\begin{achievements}
+\item \textbf{Spoken languages - English, Hebrew}
+\item Communication - Research, presentation, class instruction, leading teams of up to 45 members
+\item \textbf{Management - Management of 100 employees, project management, time management}
+\item Sales - Managing sales portfolio (up to a million dollars) in North America, B2B sales experience
+\item \textbf{Computer Languages - C, C++, JAVA, Matlab, HTML, PHP, MySQL, \LaTeX, and Flash}
+\item Computer Productivity	- Microsoft Office - Word, Excel, PowerPoint, Access, and FrontPage
+\end{achievements}
+
+\end{document}
